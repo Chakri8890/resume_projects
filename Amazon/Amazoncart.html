@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Cart Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .cart-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+        }
+
+        .item-info {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .item-info h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #007185;
+        }
+
+        .item-info p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #B12704;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quantity-selector select {
+            padding: 5px;
+        }
+
+        .remove {
+            color: #007185;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .remove:hover {
+            color: #d62c1a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cart-container">
+    <!-- Cart Item 1 -->
+    <div class="cart-item">
+        <img src="books-1.jpg" alt="Item 1">
+        <div class="item-info">
+            <h3>Amazon Echo (4th Gen)</h3>
+            <p>Coding Interview Book</p>
+            <span class="price">$99.99</span>
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity1">Qty: </label>
+            <select id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <span class="remove">Remove</span>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div class="cart-item">
+        <img src="furniture-1.jpg" alt="Item 2">
+        <div class="item-info">
+            <h3>Office Chair and Table</h3>
+            <p>Wooden Table white</p>
+            <span class="price">$249.99</span>
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity2">Qty: </label>
+            <select id="quantity2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <span class="remove">Remove</span>
+    </div>
+
+    <!-- Cart Item 3 -->
+    <div class="cart-item">
+        <img src="sec-sec-4.jpg" alt="Item 3">
+        <div class="item-info">
+            <h3>Samsung Washing Machines</h3>
+            <p>Ultimate Product to wash Clothes</p>
+            <span class="price">$299.99</span>
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity3">Qty: </label>
+            <select id="quantity3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <span class="remove">Remove</span>
+    </div>
+</div>
+
+</body>
+</html>

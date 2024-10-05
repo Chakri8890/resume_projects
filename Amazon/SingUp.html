@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Amazon Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f3f3f3;
+    }
+    
+    .signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .signup-box {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        border-radius: 4px;
+    }
+    
+    .logo {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        text-align: left;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    .password-hint {
+        text-align: left;
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .signup-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #f0c14b;
+        border: 1px solid #a88734;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .signup-button:hover {
+        background-color: #e3b334;
+    }
+    
+    .terms {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    
+    .terms a {
+        color: #0073bb;
+        text-decoration: none;
+    }
+    
+    .terms a:hover {
+        text-decoration: underline;
+    }
+    
+    hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+    
+</style>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h1>Create account</h1>
+            <form action="/submit-registration" method="post">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <p class="password-hint">Passwords must be at least 6 characters.</p>
+
+                <label for="re-password">Re-enter password</label>
+                <input type="password" id="re-password" name="re-password" required>
+
+                <button type="submit" class="signup-button">Create your Amazon account</button>
+            </form>
+            <p class="terms">By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+
+            <hr>
+
+            <p>Already have an account? <a href="location.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

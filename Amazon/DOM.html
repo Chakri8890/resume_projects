@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-div">
+        <h2 style="visibility: hidden;">Text content property</h2>
+        <h1 id="heading">OLD Heading</h1>
+        <p>Paragraph-1</p>
+        <p>paragraph-2</p>
+        <small>small text</small>
+    </div>
+
+<!--properties-->
+<div class="fruitslist">
+    <h3>Fruits</h3>
+    <ul>
+        <li>Mango</li>
+        <li>Grapes</li>
+        <li>orange</li>
+    </ul>
+</div>
+
+
+<div>       <!--It is for Practice-->
+    <h4>HELLO JAVASCRIPT!</h4>
+</div>
+<div class="one" style="border: 1px solid black; height: 100px; width: 100px; background-color: aqua; ">first-div</div>
+<div class="one" style="border: 1px solid black; height: 100px; width: 100px; background-color: aqua;">second-div</div>
+<div class="one" style="border: 1px solid black; height: 100px; width: 100px; background-color: aqua;">thirs-div</div>
+
+
+    <script>
+        let out = document.getElementById("heading")
+        console.dir(out)
+        let res = document.getElementsByClassName('first-div')
+        console.dir(res)
+        let para =document.getElementsByTagName('p')
+        console.dir(para)
+
+        //properties
+        let div = document.querySelector('div')
+        console.dir(div)     //it is innerText. output is :returns all tags that contains inside the div(returns from firstdiv-to-last div)
+
+        //div.innerHTML ----->Will give HTML Contents in the element(div)
+
+        let heading = document.querySelector('h1')
+        heading.innerHTML = 'NEW Heading'           //This will change h1-tag OLD heading to NEW Heading
+        heading.innerHTML = '<i>NEW Heading</i>'     //same as above , but returns in italic text-style
+
+        //textcontent property
+        let text_content = document.querySelector('h2')
+        console.dir(text_content)
+        console.log(text_content.innerText) //It display empty, becuse visbiity is hidden
+        console.log(text_content.textContent) //it will show the hidden content
+
+
+        //practice Q-1 :   Append text 'From SVCE' to the present tag
+        let practice = document.querySelector('h4')
+        practice.innerText = practice.innerText + " I am from SVCE"  //output : HELLO JAVASCRIPT! I am from SVCE
+        console.log(practice.innerText)
+
+        //practice-2   :  Create 3-same class div and add some unique text to each of them
+        let practice2 = document.querySelectorAll('.one')
+        console.log(practice2)
+        practice2.innerText = 'This is New Text'
+        console.log(practice2)
+        
+    </script>
+</body>
+</html>

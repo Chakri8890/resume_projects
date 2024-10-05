@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="youtubeColne.css">
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <div class="header">
+            <div class="header_left">
+                <i class="material-symbols-outlined">menu</i> 
+                <img src="1.jpg" alt="Logo">
+            </div>
+
+            <div class="header_search">
+                <input type="text" placeholder="Search" name="txtsearch">
+                <button><i class="material-symbols-outlined">search</i></button>
+            </div>
+
+            <div class="header_right">
+                <i class="material-symbols-outlined">mic</i>
+                <i class="material-symbols-outlined">videocam</i>
+                <i class="material-symbols-outlined">notifications</i>
+                <i class="material-symbols-outlined">account_circle</i>
+                <i class="material-symbols-outlined">apps</i>
+            </div>
+        </div>
+    </header>
+
+    <!--Main content section-->
+    <div class="main-body">
+        <!--Sidebar section-->
+        <nav class="sidebar">
+            <div class="side-categories">
+                <i class="material-symbols-outlined">home</i><span>Home</span>
+            </div>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">library_add</i><span>Shorts</span>
+            </div>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">subscriptions</i><span>Subscriptions</span>
+            </div>
+            <hr/>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">history</i><span>History</span>
+            </div>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">watch_later</i><span>Watch later</span>
+            </div>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">notifications</i><span>Notifications</span>
+            </div>
+            <hr/>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">account_box</i><span>Account</span>
+            </div>
+            <div class="side-categories">
+                <i class="material-symbols-outlined">language</i><span>Language</span>
+            </div>
+            <div class="side-categories">
+                <select name='drpdwnlstDate'>
+                    <option value="SELECT">Show more</option>
+                    <option value="Liked videos">Liked videos</option>
+                    <option value="Watch later">Watch later</option>
+                    <option value="Downloads">Downloads</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+        </nav>
+
+        <!--Videos section-->
+        <main class="videos">
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="web.jpeg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="web.jpeg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>Web Development Course Using HTML | CSS | JAVASCRIPT</h4>
+                        <a href="#">Web Development</a>
+                        <span>10M Views • 3 months ago</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the following .video div for more videos -->
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="nature.jpeg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="nature.jpeg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>The Greenary Nature in the World</h4>
+                        <a href="#">Peaceful climate</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="night-sky-desktop-backgrounds-for-winter-wallpaper-preview.jpg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="night-sky-desktop-backgrounds-for-winter-wallpaper-preview.jpg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>Environment in the beautiful Night Climate</h4>
+                        <a href="#">Environmental World</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="Rolls.avif" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="Rolls.avif" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>Chicken kathi Roll Receipe | Indian Kathi Roll | chef Ajay by his efforts</h4>
+                        <a href="#">Welcome to My Foodiee..</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="science.jpeg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="science.jpeg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>India - The Next Global POWERHOUSE of science and Technology</h4>
+                        <a href="#">Tomorrow is Today effort</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="titanic-movie-full-hd.jpg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="titanic-movie-full-hd.jpg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>The sinking of Titanic - sleeping sun</h4>
+                        <a href="#">Port of Ship and Ocean</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="nature.jpeg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="nature.jpeg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>The Greenary Nature in the World</h4>
+                        <a href="#">Peaceful climate</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="video">
+                <div class="video__thumbnail">
+                    <img src="nature.jpeg" alt="Web Development Thumbnail" />
+                </div>
+                <div class="video_info">
+                    <img src="nature.jpeg" alt="Channel Avatar" class="channel_avatar">
+                    <div class="title">
+                        <h4>The Greenary Nature in the World</h4>
+                        <a href="#">Peaceful climate</a>
+                        <span>1M Views • 2 months ago</span>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="video">
+    <div class="video__thumbnail">
+        <img src="nature.jpeg" alt="Web Development Thumbnail" />
+    </div>
+    <div class="video_info">
+        <img src="nature.jpeg" alt="Channel Avatar" class="channel_avatar">
+        <div class="title">
+            <h4>The Greenary Nature in the World</h4>
+            <a href="#">Peaceful climate</a>
+            <span>1M Views • 2 months ago</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="video">
+    <div class="video__thumbnail">
+        <img src="nature.jpeg" alt="Web Development Thumbnail" />
+    </div>
+    <div class="video_info">
+        <img src="nature.jpeg" alt="Channel Avatar" class="channel_avatar">
+        <div class="title">
+            <h4>The Greenary Nature in the World</h4>
+            <a href="#">Peaceful climate</a>
+            <span>1M Views • 2 months ago</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Add as many .video blocks as needed -->
+        </main>
+    </div>
+</body>
+</html>
